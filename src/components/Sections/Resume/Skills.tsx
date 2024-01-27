@@ -1,6 +1,6 @@
-import {FC, memo, PropsWithChildren, useMemo} from 'react';
+import { FC, memo, PropsWithChildren, useMemo } from 'react';
 
-import {Skill as SkillType, SkillGroup as SkillGroupType} from '../../../data/dataDef';
+import { SkillGroup as SkillGroupType, Skill as SkillType } from '../../../data/dataDef';
 
 export const SkillGroup: FC<PropsWithChildren<{skillGroup: SkillGroupType}>> = memo(({skillGroup}) => {
   const {name, skills} = skillGroup;
@@ -26,7 +26,7 @@ export const Skill: FC<{skill: SkillType}> = memo(({skill}) => {
     <div className="flex flex-col">
       <span className="ml-2 text-sm font-medium">{name}</span>
       <div className="h-5 w-full overflow-hidden rounded-full bg-neutral-300">
-        <div className="h-full rounded-full bg-orange-400" style={{width: `${percentage}%`}} />
+        <div className="h-full rounded-full bg-teal-800 hover:bg-teal-500" style={{width: `${percentage}%`}} />
       </div>
     </div>
   );
