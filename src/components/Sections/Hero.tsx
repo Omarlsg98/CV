@@ -1,9 +1,9 @@
-import { ChevronDownIcon } from '@heroicons/react/24/outline';
+import {ChevronDownIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import { FC, memo } from 'react';
+import {FC, memo} from 'react';
 
-import { heroData, SectionId } from '../../data/data';
+import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
 
@@ -36,7 +36,7 @@ const Hero: FC = memo(() => {
                   )}
                   href={href}
                   key={text}
-                  target={text==='Resume'? '_blank':''}>
+                  target={text === 'Resume' ? '_blank' : ''}>
                   {text}
                   {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
                 </a>
